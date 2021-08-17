@@ -1,0 +1,28 @@
+.bordure {
+    border: solid 1px red;
+}
+.page{
+    /* padding:10px; */
+    padding-left: 10px;
+}
+.restaurant{
+    width: 100%;
+    height: 240px;
+    background-color: white;
+    margin: 1vw 0;
+    padding: 5px;        
+    border-radius: 20px;
+    transition-duration: 200ms;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
+} 
+.restaurant:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.restaurant img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
