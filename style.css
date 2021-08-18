@@ -1,16 +1,16 @@
 .bordure {
     border: solid 1px red;
 }
-.page{
-    /* padding:10px; */
+/* .page{
+    
     padding-left: 10px;
-}
+} */
 .restaurant{
     width: 100%;
-    height: 240px;
+    height: 230px;
     background-color: white;
     margin: 1vw 0;
-    padding: 5px;        
+    /* padding: 5px;         */
     border-radius: 20px;
     transition-duration: 200ms;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
