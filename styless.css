@@ -12,12 +12,21 @@
 }
 .menuentrees{
     width: 100%;
-    height:380px;
+    height:340px;
     background-color:yellow;
     border-radius: 40px 40px 0 0;
 }
 .menuentrees h2, h3,h5{
-    padding-left:5%;
+    padding-left:2%;
+}
+.menuentrees ul li,.plats ul li,.desserts ul li{
+    margin-bottom: 6%;
+    margin-top: 5%;
+}
+.menuentrees .entreestitle{
+    
+        margin-top: 5%;
+    
 }
 .photomenu {
    width: 100%;
@@ -25,15 +34,51 @@
    /* height:300px; */
     
 }
+.prix{
+    height: 50px;
+    width: 50px;
+    border-radius:0 10px 10px 0;
+   
+}
 .vignette{
     display:flex;
-    flex-direction: row;
-    width:100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:70%;
     height:50px;
     background:violet;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 15px 15px 15px 15px;
 }
-.button{
+.ingredients{
+    display:flex;
+    align-items: center;
+    
+    
+    
+}
+.plats{
+    width: 100%;
+    height:290px;
+    background-color:yellow;
+    
+}
+.desserts{
+    width: 100%;
+    height:280px;
+    background-color:yellow;
+    
+}
+.footerlist{
+    height: 80px;
+    width:100%;
+    background-color: teal;
+}
+/* .footerlist ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+/* .button{
     display:flex;
     flex-direction: row;
-}
+} */
