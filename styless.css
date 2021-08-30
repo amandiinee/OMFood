@@ -69,15 +69,15 @@
     
 }
 .footerlist{
-    height: 80px;
+    height: 200px;
     width:100%;
     background-color: teal;
 }
-/* .footerlist ul{
+.footerlist ul{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-} */
+}
 /* .button{
     display:flex;
     flex-direction: row;
