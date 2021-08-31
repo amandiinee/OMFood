@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    
+    <!-- <link rel="stylesheet" href="style.css" />     -->
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: "Roboto";
+        }
+        /* .bordure {
+            border: solid 1px red;
+        } */
+        footer{
+            
+            background-color: rgb(61, 59, 59);
+            height: 210px;              
+        }
+        .footerlist {
+            color: white;
+            margin-left: 25px;     
+        }
+        .footerlist ul li{
+            margin-top: 2px;
+            margin-bottom: 8px;
+            list-style-type: none;
+        }
+        .footerlist i{
+            margin-right: 10px;
+        }
+        .footerlist p{
+            font-size: 1.1em;
+            padding: 25px 0 20px 0;
+            font-family: "Shrikhand";
+        }
+        .hands {
+            font-size: 0.7em;
+        }
+        /* .footerlist {
+            padding-top: 20px;
+        } */
+
+        /* Mise en page pour les tablettes (à partir de 800px) 
+        Principe du mobile first */
+        @media screen and (min-width: 700px) {
+            .page {
+                width: 700px;
+                margin: 0 auto;
+            }  
+           
+        }
+
+        /* Mise en page pour les écrans (à partir de 1200px) 
+        Principe du mobile first */       
+        @media screen and (min-width: 1200px) {
+            .page {
+                width: 1200px;
+            }
+        }    
+    </style>
+</head>
+<body>  
+<header>
+    <!-- <p>ah</p> -->
+</header>   
+ 
+    <footer class="bordure">
+        <div class="footerlist bordure">
+            <p>Ohmyfood</p>
+            <ul>
+                <li class="bordure"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</li>
+                <li class="bordure"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li class="bordure">Mentions légales</li>
+                <li class="bordure">Contact</li>
+            </ul>
+        </div>
+
+    </footer>    
+</body>
+</html>  

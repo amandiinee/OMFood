@@ -46,6 +46,28 @@ Texte: Roboto */
     background-color: #FF79DA ;
     border-radius: 25px 25px;
 }
+.fonctionnement {
+    padding-top: 25px;
+}
+.fonctionnement ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+   
+
+}
+.fonctionnement li {
+    background-color: wheat;
+    height: 60px;
+    width: 350px;
+    border-radius: 25px 25px;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: space-around; */
+}
+
 p{
     margin:5px 0;
 }
@@ -110,6 +132,7 @@ p{
 .restaurant figcaption i{
     display:flex;
     justify-content: flex-end;
+    
     
     
 }
