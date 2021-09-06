@@ -7,14 +7,35 @@
 .bordure {
     border: solid 1px red;
 }
+
 .body{
     list-style-type: none;
+    font-family: "Roboto";
+}
+.page{
+    font-family: "Roboto";
+}
+.back{
+    
+    float:left;
+    /* margin-right: 75px; */
+    
+}
+.hautdepage{
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+
 }
 .menuentrees{
     width: 100%;
-    height:340px;
+    height:400px;
     background-color:yellow;
     border-radius: 40px 40px 0 0;
+    padding-left:10px;
+    padding-right:10px;
+    background-image: "photomenu";
+    
 }
 .menuentrees h2, h3,h5{
     padding-left:2%;
@@ -36,49 +57,121 @@
 }
 .prix{
     height: 50px;
-    width: 50px;
-    border-radius:0 10px 10px 0;
-   
+    width: auto;
+    border-radius:0 10px 10px 0;  
+    background-color: transparent;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1em;
 }
+/* .menuentrees .button {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+} */
 .vignette{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width:70%;
-    height:50px;
-    background:violet;
+    justify-content: center;
+    width:100%;
+    height:68px;
+    background:white;
     border-radius: 15px 15px 15px 15px;
+    font-size: 1.1em;
+    
+    /* padding-right:20px;
+    padding-left:20px; */
 }
-.ingredients{
-    display:flex;
-    align-items: center;
+/* .ingredients{
     
     
     
-}
+    
+} */
 .plats{
     width: 100%;
-    height:290px;
+    height:350px;
     background-color:yellow;
+    padding-left:10px;
+    padding-right:10px;
     
 }
 .desserts{
     width: 100%;
-    height:280px;
+    height:500px;
     background-color:yellow;
+    padding-left:10px;
+    padding-right:10px;
+    /* margin-bottom: 60px; */
     
 }
-.footerlist{
-    height: 200px;
-    width:100%;
-    background-color: teal;
+.commande {
+    font-family: "Roboto";
+    height: 55px;
+    width: 190px;
+    
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 75px;
+    margin-top: 35px;
 }
-.footerlist ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-/* .button{
+.bouton-commande {
     display:flex;
-    flex-direction: row;
+    justify-content: center;
+    
+}
+footer{
+            
+    background-color: rgb(61, 59, 59);
+    height: 210px;              
+}
+.footerlist {
+    color: white;
+    margin-left: 25px;     
+}
+.footerlist ul li{
+    margin-top: 2px;
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+.footerlist i{
+    margin-right: 10px;
+}
+.footerlist p{
+    font-size: 1.1em;
+    padding: 25px 0 20px 0;
+    font-family: "Shrikhand";
+}
+.hands {
+    font-size: 0.7em;
+}
+/* .footerlist {
+    padding-top: 20px;
 } */
+
+/* Mise en page pour les tablettes (à partir de 800px) 
+Principe du mobile first */
+@media screen and (min-width: 700px) {
+    .page {
+        width: 700px;
+        margin: 0 auto;
+    }  
+   
+}
+
+/* Mise en page pour les écrans (à partir de 1200px) 
+Principe du mobile first */       
+@media screen and (min-width: 1200px) {
+    .page {
+        width: 1200px;
+    }
+}    
