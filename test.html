@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+    
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Google font Shrikhand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    
+      
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .bordure {
+        border: solid 1px red;
+    }
+
+    body{
+        list-style-type: none;
+        font-family: "Roboto";
+    }
+
+    header {
+        background-color: white;
+        height: 63px;
+    }
+
+    main {
+        background-color: #f6f6f6;
+        margin-top: 283px;
+        padding:0 15px;
+        
+
+    }
+
+    .page{
+        background: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 63px;
+    }
+    h2{
+        padding:40px 5px;
+        font-family: "Shrikhand";
+        font-size:2em;
+    }
+/* .back{
+    
+    margin-right: 60px;
+   
+    
+} */
+#logo {
+    padding: 10px 0 10px 0;
+}
+.hautdepage{
+    display:flex;
+    justify-content: center;
+    
+
+}
+/* .menuentrees{
+    width: 100%;
+    height:420px;
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    padding-left:10px;
+    padding-right:10px;
+    
+    
+} */
+/* .menuentrees h2, h3,h5{
+    padding-left:2%;
+}
+.menuentrees ul li,.plats ul li,.desserts ul li{
+    margin-bottom: 6%;
+    margin-top: 5%;
+} */
+/* .menuentrees .entreestitle{
+    
+        margin-top: 5%;
+    
+} */
+/* .photomenu {
+   width: 100%;
+   
+  
+    
+} */
+.prix{
+    height: 50px;
+    width: auto;
+    border-radius:0 10px 10px 0;  
+    background-color: transparent;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1em;
+}
+/* .menuentrees .button {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+} */
+.vignette{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    height:68px;
+    margin-bottom: 15px;
+    background:white;
+    border-radius: 15px 15px 15px 15px;
+    font-size: 1.1em;
+    
+    /* padding-right:20px;
+    padding-left:20px; */
+}
+/* .ingredients{
+    
+    
+    
+    
+} */
+.plats,.entrees,.desserts{
+    width: 100%;
+    /* height:350px; */
+    background-color: #f6f6f6;
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom: 30px;
+    
+}
+/* .desserts{
+    width: 100%;
+    
+    background-color: #f6f6f6;
+    padding-left:10px;
+    padding-right:10px;
+    
+    
+} */
+.commande {
+    font-family: "Roboto";
+    height: 55px;
+    width: 190px;
+    
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 75px;
+    margin-top: 35px;
+}
+.bouton-commande {
+    display:flex;
+    justify-content: center;
+    
+}
+footer{
+            
+    background-color: rgb(61, 59, 59);
+    height: 210px;              
+}
+.footerlist {
+    color: white;
+    margin-left: 25px;     
+}
+.footerlist ul li{
+    margin-top: 2px;
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+.footerlist ul li a{
+            color:white;
+            text-decoration: none;
+        }
+.footerlist i{
+    margin-right: 10px;
+}
+.footerlist p{
+    font-size: 1.1em;
+    padding: 25px 0 20px 0;
+    font-family: "Shrikhand";
+}
+.hands {
+    font-size: 0.7em;
+}
+/* .footerlist {
+    padding-top: 20px;
+} */
+
+/* Mise en page pour les tablettes (à partir de 800px) 
+Principe du mobile first */
+@media screen and (min-width: 700px) {
+    .page {
+        width: 700px;
+        margin: 0 auto;
+    }  
+   
+}
+
+/* Mise en page pour les écrans (à partir de 1200px) 
+Principe du mobile first */       
+@media screen and (min-width: 1200px) {
+    .page {
+        width: 1200px;
+    }
+}    
+
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <!-- <div>
+                <a href="#"> 
+                    <i class="bordure fas fa-arrow-left">  
+                    <h1>Ohmyfood</h1>    
+                </a>
+            </div> -->
+            <a class="hautdepage bordure" id="logo" href="index.html">               
+                <i class="back bordure fas fa-arrow-left"></i><img class="logo bordure" src="images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood">
+            </a> 
+        </header>
+        <main>
+            <h2 class="bordure">&Agrave; la française</h2>
+            
+            <!-- Entrées --> 
+            <section class="entrees bordure">
+                <h3 class="bordure entreestitle">ENTRÉES</h3>
+                <ul>
+                    <li class="vignette bordure"><h3 class="bordure ingredients">Tartare de poulpe acidulé</h3><h5 class="bordure ingredients">Aux zests d'orange</h5><button class="bordure prix">25€</button></li>
+                    <li class="vignette bordure"><h3 class="bordure ingredients">Velouté de légumes d'antan</h3><h5 class="bordure ingredients">Carotte,panais,topinambour</h5><button class="bordure prix">35€</button></li>
+                    <li class="vignette bordure"><h3 class="bordure ingredients">Soupe à l'oignon</h3><h5 class="bordure ingredients">Revisitée</h5><button class="bordure prix">20€</button></li>
+                </ul>      
+            </section>  
+
+            <!-- Plats --> 
+            <section class="plats bordure">
+                <h3 class="bordure entreestitle">PLATS</h3>
+                <ul>
+                    <li class="vignette bordure"><h3 class="bordure">Coquilles Saint-Jacques</h3><h5 class="bordure ingredients">Accompagnées d'une purée de panais</h5><button class="bordure prix">40€</button></li>
+                    <li class="vignette bordure"><h3 class="bordure">Magret de canard</h3><h5 class="bordure ingredients">Et parmentier de pommes de terre</h5><button class="bordure prix">35€</button></li>
+                    <li class="vignette bordure"><h3 class="bordure">Pigeonneau d'Ille-et-Vilaine</h3><h5 class="bordure ingredients">Sur son lit de gnocchis aux légumes</h5><button class="bordure prix">44€</button></li>
+                </ul>      
+            </section>
+
+            <!-- Desserts -->  
+            <section class="desserts bordure">
+                <h3 class="bordure entreestitle">DESSERTS</h3>
+                <ul>
+                    <li class="vignette bordure"><h3 class="bordure">Pétales de violettes glacés</h3><h5 class="bordure ingredients">Et purée de noisettes</h5><button class="bordure prix">18€</button></li>
+                    <li class="vignette bordure"><h3 class="bordure">Fondant au chocolat</h3><h5 class="bordure ingredients">Revisité</h5><button class="bordure prix">22€</button></li>
+                    <li class="vignette bordure"><h3 class="bordure">Millefeuille croustillant</h3><h5 class="bordure ingredients">Myrtilles et pâte d'amande</h5><button class="bordure prix">23€</button></li>
+                </ul>
+            </section>    
+
+            <div class="bouton-commande bordure">
+                <button class="commande bordure">Commander</button>
+            </div>
+        </main>
+        <footer class="bordure">
+            <div class="footerlist bordure">
+                <p>Ohmyfood</p>
+                <ul>
+                    <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</li>
+                    <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</li>
+                    <li class="bordure"><a href="#">Mentions légales</li>
+                    <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</li>
+                </ul>
+            </div>
+        </footer>  
+    </div>     
+</body>
+</html>
