@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+    
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+.bordure {
+    border: solid 1px red;
+}
+.logo{
+    
+    display:flex;
+    justify-content: center;
+}
+.pointmap {
+    width: 100%;
+    height: 50px;
+    background-color:gray;
+    display:flex;
+    justify-content: center;
+}
+.pointmap i{
+    display:flex;
+    align-items: center;
+}
+.pointmap input{
+    background-color:gray;
+    margin-left: 14px;
+}
+.rechercheresto{
+    height:300px;
+    background-color: #d9d9d9b7;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.rechercheresto button{
+    width: 200px;
+    height: 50px ;
+    color: white;
+    background-color: #FF79DA ;
+    border-radius: 25px 25px;
+}
+p{
+    margin:5px 0;
+}
+.primaire{
+    color: #9356DC;
+}
+.secondaire {
+    color:#FF79DA;
+}
+.tertiaire {
+    color:#99E2D0;
+}
+.grisclair{
+    color: #d9d9d9;
+}
+@media screen and (min-width: 700px) {
+            .page {
+                width: 700px;
+                margin: 0 auto;
+            }  
+            .restaurants {           
+                width: 100%;
+
+            }
+           
+            .restaurant {
+                width: 49%; 
+            }
+           
+        }
+
+        /* Mise en page pour les écrans (à partir de 1200px) 
+        Principe du mobile first */       
+        @media screen and (min-width: 1200px) {
+            .page {
+                width: 1200px;
+            }
+            .restaurants {           
+                width:100%;
+                background-color: #f2f2f2;
+                border-radius: 15px;
+
+            }
+
+            .restaurant {
+                width: 49%;
+            }
+
+        }    
+    </style>
+</head>
+<body>
+<div class="page"> 
+    <header>
+        
+       
+        <!-- Logo -->
+        <div class="logo bordure">
+            <a href="#" id="logo"><img src="images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood"></a>
+        </div>   
+
+        <section class="pointmap bordure">
+            <i class="fas fa-map-marker-alt"></i> 
+            <input type="search" value="Paris,Belleville"/> 
+        </section>   
+        
+
+    </header>
+    <main>
+  
+      <section class="rechercheresto bordure">
+            <h2 class="bordure">Réservez le menu qui vous convient</h2>
+            <h3 class="bordure">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+            <button>Explorer nos restaurants</button>
+      </section>
+      
+      <section class="fonctionnement bordure">
+          <h2>Fonctionnement</h2>
+          <ul>
+              <li><i class="fas fa-mobile-alt"></i><button class="bordure">Choisissez un restaurant</button></li>
+              <li><i class="fas fa-list-ul"></i><button class="bordure">Composez votre menu</button></li>
+              <li><i class="fas fa-store"></i><button class="bordure">Dégustez au restaurant</button></li>
+          </ul>
+      </section>
+
+      <section class="restaurants bordure">
+            <h2 class="bordure">Restaurants</h2>
+            <div class="grille bordure">
+                    <div class="restaurant bordure">
+                    <figure>
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du restaurant La palette du goût" />
+                            <!-- <button class="new bordure">Nouveau</button>  -->
+                            <figcaption class="bordure">
+                            <i class="bordure far fa-heart"></i>   
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                            <!-- <div>
+                                <i class="far fa-heart"></i>
+                            </div> -->
+                            </figcaption>
+                        </figure>
+                    </div>
+                <div class="restaurant bordure">
+                <figure>
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du restaurant La note enchantée" />
+                        <figcaption class="bordure">
+                        <h3 class="bordure">La note enchantée </h3>
+                        <p class="bordure">Charonne</p>
+                            <div>
+                                <i class="coeur bordure far fa-heart"></i>
+                            </div>
+                        </figcaption>
+                
+                </figure>     
+                </div>
+                <div class="restaurant bordure">
+                <figure>
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant A la française" />
+                        <figcaption>
+                        <h3>A la française</h3>
+                        <p>Cité Rouge</p>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        </figcaption>
+                </figure>
+                </div>
+                <div class="restaurant bordure"> 
+                    <figure>
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+                        <figcaption>
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        </figcaption>
+                    </figure>            
+                </div>
+            </div>
+       </section>
+
+    </main>
+            
+    <footer>
+        <div class="footerlist">
+            <ul>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    
+    </footer>    
+</div>  
+</body>
+</html>    
