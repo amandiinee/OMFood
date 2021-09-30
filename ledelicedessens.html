@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+    
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Google font Shrikhand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+
+      <style>
+          * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-sizing: border-box;
+        }
+        .bordure {
+        border: solid 0px red;
+        } 
+        .plats, .entrees, .desserts{
+            width: 100%;
+            /* margin-bottom: 30px;  */
+        }
+        hr {
+        border: 0;
+        border-top: solid 3px #99e2d0;
+        width: 40px;
+        margin-bottom: 20px;
+        }
+        body{
+        list-style-type: none;
+        font-family: "Roboto";
+    }
+
+    header {
+        background-color: white;
+        height: 63px;
+    }
+
+    main {
+        background-color: #f6f6f6;
+        /* margin-top: 283px; */
+        margin-top:236px;
+        padding:0 15px;
+        border-radius: 40px 40px 0 0;
+        
+
+    }
+
+    .page{
+        background: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 63px;
+    }
+    h2{
+        padding:30px 5px;
+        font-family: "Shrikhand";
+        font-size:1.8em;
+    }
+    h4{
+        margin: 2px 0;
+    }
+    p{
+        font-size: 0.9em;
+        margin: 2px 0;
+    }
+    hr {
+        border: 0;
+        border-top: solid 3px #99e2d0;
+        width: 40px;
+        margin-bottom: 20px;
+    }
+    .hautdepage i {
+        position: absolute;
+        left: 23px;
+        top: 22px;
+        color:#353535;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .entreestitle {
+        
+        font-weight: lighter;
+        
+    }
+   
+    #logo {
+        padding: 13px 0 9px 0;
+
+    }
+    .hautdepage{
+        display:block;
+        text-align: center;
+        position: relative;
+
+    }
+        .entrees li, .plats li, .desserts li {
+            display:flex;
+            flex-direction: row;
+           
+        }
+        .entrees li div, .plats li div, .desserts li div {
+            flex-grow:1;
+            margin-top:10px;
+    
+        }
+        .entrees li button, .plats li button,.desserts li button {
+            width:70px;
+            border-radius: 0 15px 15px 0;
+            padding-top: 20px;
+            font-weight: bold;
+            background-color: transparent;
+            font-size: 0.9em;
+            color: #353535;
+            font-family: "Roboto";
+        }
+        .plat{
+        height:68px;
+        margin-bottom: 15px;
+        margin-right: 1px;
+        margin-left: 1px;
+        padding-left: 18px;
+        background:white;
+        border-radius: 15px 15px 15px 15px;
+        font-size: 1.1em;
+        -webkit-box-shadow: 5px 5px 15px -6px #515151; 
+        box-shadow: 5px 5px 15px -6px #515151;
+       }
+       .coeur{
+    float:right;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+}
+.commande {
+    font-family: "Roboto";
+    height: 55px;
+    width: 190px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color:white;
+    -webkit-box-shadow: 5px 5px 15px -6px #515151; 
+    box-shadow: 5px 5px 15px -6px #515151;
+    /* margin-bottom: 75px;
+    margin-top: 35px; */
+}
+.commande:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.bouton-commande {
+    padding-top : 40px;
+    padding-bottom: 80px;
+    display:flex;
+    justify-content: center;
+    
+}
+footer{
+            
+    background-color: rgb(61, 59, 59);
+    height: 210px;              
+}
+.footerlist {
+    color: white;
+    margin: 0 25px;
+    /* margin-left: 25px;      */
+}
+.footerlist ul li{
+    margin-top: 2px;
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+.footerlist ul li a{
+            color:white;
+            text-decoration: none;
+        }
+.footerlist i{
+    margin-right: 10px;
+}
+.footerlist p{
+    font-size: 1.1em;
+    padding: 25px 0 20px 0;
+    font-family: "Shrikhand";
+}
+.hands {
+    font-size: 0.7em;
+}
+
+@media screen and (min-width: 700px) {
+    .page {
+        width: 700px;
+        margin: 0 auto;
+    }  
+   
+}
+
+@media screen and (min-width: 1200px) {
+    .page {
+        width: 1200px;
+    }
+}    
+      </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <a class="hautdepage bordure" id="logo" href="index.html">               
+                <i class="bordure fas fa-arrow-left"></i><img class="logo bordure" src="images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood">
+            </a> 
+        </header>
+        <main class="bordure">
+            <h2 class="bordure">Le délice des sens<i class="coeur bordure far fa-heart"></i></h2>
+             
+        <section class="entrees bordure">
+            <h3 class="bordure entreestitle">ENTRÉES</h3>
+            <hr/>
+            <ul>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Tartare de thon</h4>
+                        <p class="bordure">Assaisonné au yuzu</p>
+                    </div>
+                    <button class="bordure">25€</button>
+                </li>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Bouchée de homard croustillant</h4>
+                        <p class="bordure">Et sa farandole de petits légumes</p>
+                    </div>
+                    <button class="bordure">35€</button>
+                </li>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Velouté de cèpes</h4>
+                        <p class="bordure">Aux truffes</p>
+                    </div>
+                    <button class="bordure">20€</button>
+                </li>
+            </ul>  
+        </section>  
+    
+        <section class="plats bordure">
+            <h3 class="bordure entreestitle">PLATS</h3>
+            <hr/>
+            <ul>
+                <li class="bordure plat"><div>
+                        <h4 class="bordure">Poulet rôti aux herbes de provence</h4>
+                        <p class="bordure">Et sa crème de truffe</p>
+                    </div>
+                    <button class="bordure">40€</button>
+                </li>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Langouste rôtie</h4>
+                        <p class="bordure">Et ses légumes de saison</p>
+                    </div>
+                    <button class="bordure">35€</button>
+                </li>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Côte de boeuf angus</h4>
+                        <p class="bordure">Et sa purée de panais</p>
+                    </div>
+                    <button class="bordure">44€</button>
+                </li>
+            </ul>  
+        </section>  
+        <section class="desserts bordure">
+            <h3 class="bordure entreestitle">DESSERTS</h3>
+            <hr/>
+            <ul>
+                <li class="bordure plat"><div>
+                        <h4 class="bordure">Farandole de desserts</h4>
+                        <p class="bordure">Du chef</p>
+                    </div>
+                    <button class="bordure">18€</button>
+                </li>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Crème brulée</h4>
+                        <p class="bordure">Revisitée</p>
+                    </div>
+                    <button class="bordure">22€</button>
+                </li>
+                <li class="bordure plat">
+                    <div>
+                        <h4 class="bordure">Tiramisu</h4>
+                        <p class="bordure">À la noisette</p>
+                    </div>
+                    <button class="bordure">23€</button>
+                </li>
+            </ul>  
+        </section>  
+        <div class="bouton-commande bordure">
+            <button class="commande bordure">Commander</button>
+        </div>
+      </main>
+        <footer class="bordure">
+            <div class="footerlist bordure">
+                <p>ohmyfood</p>
+                <ul>
+                    <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                    <li class="bordure"><a href="#">Mentions légales</a></li>
+                    <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                </ul>
+            </div>
+        </footer>  
+    </div>     
+</body>
+</html>
+   

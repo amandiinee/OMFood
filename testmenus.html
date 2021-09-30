@@ -74,7 +74,8 @@
         border: 0;
         border-top: solid 3px #99e2d0;
         width: 40px;
-        margin-top:5px;
+        /* margin-top:5px; */
+        margin-bottom: 20px;
     }
     .hautdepage i {
         position: absolute;
@@ -83,27 +84,18 @@
         color:#353535;
         font-weight: bold;
         font-size: 1.2em;
-
-        /* float:left; */
-        /* margin-left: 23px; */
     }
-    .entreestitle {
-        margin-bottom: 20px;
-        font-weight: lighter;
-        
+    .entreestitle {   
+        font-weight: lighter;   
     }
-    /*modif padding pour ajuster */
     #logo {
         padding: 13px 0 9px 0;
-
     }
     .hautdepage{
         display:block;
         text-align: center;
         position: relative;
-
     }
-
     .prix{
         height: 50px;
         width: auto;
@@ -254,18 +246,42 @@ Principe du mobile first */
             
             <!-- Entrées --> 
             <section class="entrees bordure">
-                <h3 class="bordure entreestitle">ENTRÉES<hr/></h3>
-                
-                <ul>
+                <h3 class="bordure entreestitle">ENTRÉES</h3>
+                <hr/>
+                <!-- <ul>
                     <li class="vignette bordure"><h4 class="bordure ingredients">Tartare de poulpe acidulé</h4><p class="bordure ingredients">Aux zests d'orange</p><button class="bordure prix">25€</button></li>
                     <li class="vignette bordure"><h4 class="bordure ingredients">Velouté de légumes d'antan</h4><p class="bordure ingredients">Carotte, panais, topinambour</p><button class="bordure prix">35€</button></li>
                     <li class="vignette bordure"><h4 class="bordure ingredients">Soupe à l'oignon</h4><p class="bordure ingredients">Revisitée</p><button class="bordure prix">20€</button></li>
-                </ul>      
+                </ul>       -->
+                <ul>
+                    <li class="bordure" style="display: flex; flex-direction: row; ">
+                        <div style="flex-grow:1;">
+                            <h4 class="bordure">Tartare de poulpe acidulé</h4>
+                            <p class="bordure">Aux zests d'orange</p>
+                        </div>
+                        <button class="bordure" style="width:50px;">25€</button>
+                    </li>
+                    <li class="bordure" style="display: flex; flex-direction: row; ">
+                        <div style="flex-grow:1;">
+                            <h4 class="bordure">Velouté de légumes d'antan</h4>
+                            <p class="bordure">Carotte, panais, topinambour</p>
+                        </div>
+                        <button class="bordure" style="width:50px;">35€</button>
+                    </li>
+                    <li class="bordure" style="display: flex; flex-direction: row; ">
+                        <div style="flex-grow:1;">
+                            <h4 class="bordure">Soupe à l'oignon</h4>
+                            <p class="bordure">Revisitée</p>
+                        </div>
+                        <button class="bordure" style="width:50px;">20€</button>
+                    </li>
+                </ul>  
             </section>  
 
             <!-- Plats --> 
             <section class="plats bordure">
-                <h3 class="bordure entreestitle">PLATS<hr/></h3>
+                <h3 class="bordure entreestitle">PLATS</h3>
+                <hr/>
                 <ul>
                     <li class="vignette bordure"><h4 class="bordure">Coquilles Saint-Jacques</h4><p class="bordure ingredients">Accompagnées d'une purée de panais</p><button class="bordure prix">40€</button></li>
                     <li class="vignette bordure"><h4 class="bordure">Magret de canard</h4><p class="bordure ingredients">Et parmentier de pommes de terre</p><button class="bordure prix">35€</button></li>
@@ -275,7 +291,7 @@ Principe du mobile first */
 
             <!-- Desserts -->  
             <section class="desserts bordure">
-                <h3 class="bordure entreestitle">DESSERTS<hr/></h3>
+                <h3 class="bordure entreestitle">DESSERTS</h3>
                 <ul>
                     <li class="vignette bordure"><h4 class="bordure">Pétales de violettes glacés</h4><p class="bordure ingredients">Et purée de noisettes</p><button class="bordure prix">18€</button></li>
                     <li class="vignette bordure"><h4 class="bordure">Fondant au chocolat</h4><p class="bordure ingredients">Revisité</p><button class="bordure prix">22€</button></li>
@@ -291,10 +307,10 @@ Principe du mobile first */
             <div class="footerlist bordure">
                 <p>Ohmyfood</p>
                 <ul>
-                    <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</li>
-                    <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</li>
-                    <li class="bordure"><a href="#">Mentions légales</li>
-                    <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</li>
+                    <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                    <li class="bordure"><a href="#">Mentions légales</a></li>
+                    <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
                 </ul>
             </div>
         </footer>  
