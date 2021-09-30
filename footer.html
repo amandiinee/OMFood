@@ -31,9 +31,10 @@
         body{
             font-family: "Roboto";
         }
-        /* .bordure {
-            border: solid 1px red;
-        } */
+        .bordure {
+            border: solid 0px red;
+        }
+        /*Footer*/
         footer{
             
             background-color: rgb(61, 59, 59);
@@ -41,7 +42,7 @@
         }
         .footerlist {
             color: white;
-            margin-left: 25px;     
+            margin:0 25px;     
         }
         .footerlist ul li{
             margin-top: 2px;
@@ -63,10 +64,6 @@
         .hands {
             font-size: 0.7em;
         }
-        /* .footerlist {
-            padding-top: 20px;
-        } */
-
         /* Mise en page pour les tablettes (à partir de 800px) 
         Principe du mobile first */
         @media screen and (min-width: 700px) {
@@ -87,21 +84,18 @@
     </style>
 </head>
 <body>  
-<header>
-    <!-- <p>ah</p> -->
+<header>   
 </header>   
- 
-    <footer class="bordure page">
+    <footer class="bordure">
         <div class="footerlist bordure">
             <p>Ohmyfood</p>
             <ul>
-                <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</li></a>
-                <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</li></a>
-                <li class="bordure"><a href="#">Mentions légales</li></a>
-                <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</li></a>
+                <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</li>
+                <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li class="bordure"><a href="#">Mentions légales</li>
+                <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</li>
             </ul>
         </div>
-
-    </footer>    
+    </footer>  
 </body>
 </html>  

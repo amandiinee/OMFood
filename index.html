@@ -112,8 +112,7 @@
         float:left;
     } */
     .fonctionnement button{
-    padding-top : 20px;
-    padding-bottom: 20px;
+    
     display:flex;
     justify-content: center;
     font-family: "Roboto";
@@ -129,8 +128,9 @@
         justify-content: center;
         width:100%;
         height:68px;
-        margin-bottom: 15px;  
-        padding:0 20px; 
+        margin-bottom: 15px; 
+        
+        padding:20px 20px; 
         background:white;
         border-radius: 15px 15px 15px 15px;
         font-size: 1.1em;
@@ -184,25 +184,25 @@
             border-radius: 15px 15px 0 0;
 
         }
-        .restaurant figcaption {
+        /* .restaurant figcaption {
             display:flex;
             flex-direction: column;
             padding-left: 10px;
             
-        }
-        .restaurant figcaption div {
+        } */
+        /* .restaurant figcaption div {
             margin-top: auto;
            
-        }
-        .restaurant figcaption i{
+        } */
+        /* .restaurant figcaption i{
             display:flex;
             justify-content: flex-end;
             padding-right: 20px;
             margin-bottom:20px;
             
             
-        }
-        .restaurants  h3{
+        } */
+        /* .restaurants  h3{
             font-size: 1.2em;
             
         }
@@ -219,7 +219,20 @@
            
             
            
+        } */
+        .figue {
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+
         }
+
+        .coeurr {
+            flex-direction: row;
+            
+        }
+      
         .coeur:hover{
             color:indigo;
         }
@@ -305,7 +318,7 @@
             <section class="fonctionnement bordure">
                 <h3 class="bordure">Fonctionnement</h3>
                 <ul>
-                    <li class="bordure"><i class="bordure fas fa-mobile-alt"></i><button class="bordure">Choisissez un restaurant</button></li>
+                    <li class="bordure"><button class="bordure"></button><i class="bordure fas fa-mobile-alt"></i>Choisissez un restaurant</button></li>
                     <li class="bordure"><i class="bordure fas fa-list-ul"></i><button class="bordure ">Composez votre menu</button></li>
                     <li class="bordure"><i class="bordure fas fa-store"></i><button class="bordure">Dégustez au restaurant</button></li>
                 </ul>
@@ -339,7 +352,7 @@
                                     <i class="coeur bordure far fa-heart"></i>
                                 </div>
                                 </figcaption>
-                        
+                         
                         </figure>     
                         </div> -->
                         <!-- <div class="restaurant bordure">
@@ -355,16 +368,30 @@
                         <div class="restaurant bordure"> 
                             <figure>
                                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
-                                <figcaption>
+                                <figcaption class="figue">
                                     <h3 class="bordure">Le délice des sens</h3>
                                     <p class="bordure">Folie-Méricourt</p>
                                     <div>
                                         <i class="bordure coeur far fa-heart"></i>
                                     </div>
                                 </figcaption>
-                            </figure>            
+                            </figure>      
+                            
                         </div>
                         
+                        <div class="restaurant bordure"> 
+                            <figure>
+                                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+                                <figcaption class="bordure figue">
+                                    <h3 class="bordure">Le délice des sens</h3>
+                                    <p class="bordure">Folie-Méricourt</p>
+                                    <i class="bordure coeurr far fa-heart"></i>
+                                    
+                                </figcaption>
+                               
+                            </figure>  
+                                
+                        </div>    
                     </div>
                 
                 </section>
