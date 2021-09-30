@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+    
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Google font Shrikhand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    <style>
+              * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .bordure {
+        border: solid 0px red;
+    }
+
+    body{
+        list-style-type: none;
+        font-family: "Roboto";
+    }
+        .conteneur {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column; 
+            justify-content:space-between;
+            background-color: #c4c3c3e1;
+        }
+        .restaurants h2{
+            margin-top: 28px;
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        .restaurants {
+            width: 100%;
+            padding: 0 20px; 
+            margin-top: 20px;
+            margin-bottom: 55px;   
+        }
+        .restaurant{
+            /* width: 100%; */
+            height: 340px;
+            background-color: white;
+            /* margin: 1vw 0; */
+            margin: 15px 15px 15px 15px ;
+            border-radius: 15px 15px;
+            transition-duration: 500ms;
+            -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
+        } 
+        .restaurant img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 15px 15px 0 0;
+
+        }
+         /*Footer*/
+         footer{
+            
+            background-color: rgb(61, 59, 59);
+            height: 210px;              
+        }
+        .footerlist {
+            color: white;
+            margin:0 25px;     
+        }
+        .footerlist ul li{
+            margin-top: 2px;
+            margin-bottom: 8px;
+            list-style-type: none;
+        }
+        .footerlist ul li a{
+            color:white;
+            text-decoration: none;
+        }
+        .footerlist i{
+            margin-right: 10px;
+        }
+        .footerlist p{
+            font-size: 1.1em;
+            padding: 25px 0 20px 0;
+            font-family: "Shrikhand";
+        }
+        .hands {
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body>
+<main>        
+<div class="conteneur">
+    <!-- <button class="new bordure">Nouveau</button>  -->
+    <section class="restaurants bordure">
+        <h2 class="bordure">Restaurants</h2>
+        <div class="grille bordure">
+            <div class="restaurant bordure"> 
+                <figure class="bordure">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+                    <div style="float: right; padding-right:20px; padding-top:25px; margin-left: 30px; font-size: 1.4em; color: rgb(58, 58, 58);;"> 
+                        <i class="bordure coeur far fa-heart"></i>
+                    </div>  
+                    <figcaption class="bordure"  style="display: flex; flex-direction: column; margin-top: 15px; margin-left:15px">
+                    
+                        <h3 class="bordure">La palette du goût</h3>
+                        <p class="bordure" style="padding-top: 5px;">Ménilmontant</p>
+                            
+                    </figcaption> 
+                        
+                </figure>      
+                
+            </div>
+            <div class="restaurant bordure"> 
+                <figure class="bordure">
+                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+                    <div style="float: right; padding-right:20px; padding-top:25px; margin-left: 30px; font-size: 1.4em; color: rgb(58, 58, 58);;"> 
+                        <i class="bordure coeur far fa-heart"></i>
+                    </div>  
+                    <figcaption class="bordure"  style="display: flex; flex-direction: column; margin-top: 15px; margin-left:15px">
+                    
+                        <h3 class="bordure">La note enchantée</h3>
+                        <p class="bordure" style="padding-top: 5px;">Charonne</p>
+                            
+                    </figcaption> 
+                        
+                </figure>      
+                
+            </div>
+            <div class="restaurant bordure"> 
+                <figure class="bordure">
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+                    <div style="float: right; padding-right:20px; padding-top:25px; margin-left: 30px; font-size: 1.4em; color: rgb(58, 58, 58);;"> 
+                        <i class="bordure coeur far fa-heart"></i>
+                    </div>  
+                    <figcaption class="bordure"  style="display: flex; flex-direction: column; margin-top: 15px; margin-left:15px">
+                    
+                        <h3 class="bordure">A la française</h3>
+                        <p class="bordure" style="padding-top: 5px;">Cité Rouge</p>
+                            
+                    </figcaption> 
+                        
+                </figure>      
+                
+            </div>
+            <div class="restaurant bordure"> 
+                <figure class="bordure">
+                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+                    <div style="float: right; padding-right:20px; padding-top:25px; margin-left: 30px; font-size: 1.4em; color: rgb(58, 58, 58);;"> 
+                        <i class="bordure coeur far fa-heart"></i>
+                    </div>  
+                    <figcaption class="bordure"  style="display: flex; flex-direction: column; margin-top: 15px; margin-left:15px">
+                       
+                        <h3 class="bordure">Le délice des sens</h3>
+                        <p class="bordure" style="padding-top: 5px;">Folie-Méricourt</p>
+                            
+                    </figcaption> 
+                        
+                </figure>      
+                
+            </div>
+</main>       
+    <footer class="bordure">
+        <div class="footerlist bordure">
+            <p>ohmyfood</p>
+            <ul>
+                <li class="bordure"><a href="#"><i class="bordure fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li class="bordure"><a href="#"><i class="bordure hands fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li class="bordure"><a href="#">Mentions légales</a></li>
+                <li class="bordure"><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+            </ul>
+        </div>
+    </footer>  
+    </body>
+  
+</html>
