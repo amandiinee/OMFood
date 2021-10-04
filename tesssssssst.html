@@ -55,10 +55,10 @@
         }
         .restaurant{
             /* width: 100%; */
-            height: 340px;
-            background-color: white;
+            /* height: 300px; */
             /* margin: 1vw 0; */
-            margin: 15px 15px 15px 15px ;
+            background-color: white; 
+            margin: 5px 5px 15px 5px ;
             border-radius: 15px 15px;
             transition-duration: 500ms;
             -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
@@ -66,12 +66,20 @@
         } 
         .restaurant img{
             width: 100%;
-            height: 250px;
+            height: 192px;
             object-fit: cover;
-            object-position: center center;
+            object-position:bottom;
             border-radius: 15px 15px 0 0;
 
         }
+        /* .figure img{
+            width: 100%;
+            height: 192px;
+            object-fit: cover;
+            object-position:bottom;
+            border-radius: 15px 15px 0 0;
+
+        } */
          /*Footer*/
          footer{
             
@@ -143,23 +151,33 @@
                 </figure>      
                 
             </div>
-            <div class="restaurant bordure"> 
-                <figure class="bordure">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
+            <div class="bordure" style="border: solid 1px red;"> 
+                <figure class="bordure" >
+                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" style=" border: solid 1px red;width: 100%;
+                    height: 192px;
+                    object-fit: cover;
+                    object-position:bottom;
+                    border-radius: 15px 15px 0 0;" alt="Photo du restaurant Le délice des sens" />
                     <div style="float: right; padding-right:20px; padding-top:25px; margin-left: 30px; font-size: 1.4em; color: rgb(58, 58, 58);;"> 
-                        <i class="bordure coeur far fa-heart"></i>
+                        <i class="bordure far fa-heart" style="border: solid 1px red;margin-right: 10px; margin-top:-7px;font-size: 1.4em;"></i>
                     </div>  
-                    <figcaption class="bordure"  style="display: flex; flex-direction: column; margin-top: 15px; margin-left:15px">
-                    
-                        <h3 class="bordure">A la française</h3>
-                        <p class="bordure" style="padding-top: 5px;">Cité Rouge</p>
-                            
+                    <figcaption class="bordure" style=" border: solid 1px rgb(255, 187, 0);   background-color: white; 
+                    margin-top: -5px;
+                    height:78px;
+                    border-radius:0 0 15px 15px;
+                    transition-duration: 500ms;
+                    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);">
+                      <div style="padding-top:15px; padding-left:15px; border: solid 1px red;">
+                            <h3 class="bordure" >A la française</h3>
+                            <p class="bordure" style="padding-top: 5px;">Cité Rouge</p>
+                      </div>     
                     </figcaption> 
                         
                 </figure>      
                 
             </div>
-            <div class="restaurant bordure"> 
+            <!-- <div class="restaurant bordure"> 
                 <figure class="bordure">
                     <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant Le délice des sens" />
                     <div style="float: right; padding-right:20px; padding-top:25px; margin-left: 30px; font-size: 1.4em; color: rgb(58, 58, 58);;"> 
@@ -174,7 +192,7 @@
                         
                 </figure>      
                 
-            </div>
+            </div> -->
 </main>       
     <footer class="bordure">
         <div class="footerlist bordure">
