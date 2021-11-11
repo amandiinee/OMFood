@@ -28,7 +28,7 @@
         box-sizing: border-box;
         }
         .bordure {
-        border: solid 0px red;
+        border: solid 1px red;
         } 
         .plats, .entrees, .desserts{
             width: 100%;
@@ -53,7 +53,7 @@
     main {
         background-color: #f6f6f6;
         /* margin-top: 283px; */
-        margin-top:236px;
+        margin-top:215px;
         padding:0 15px;
         border-radius: 40px 40px 0 0;
         
@@ -64,7 +64,8 @@
         background: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position-y: 63px;
+        background-position-y: 0px;
+        background-position-x:center;
     }
     h2{
         padding:30px 5px;
@@ -118,7 +119,7 @@
             margin-top:10px;
     
         }
-        .entrees li button, .plats li button,.desserts li button {
+        .entrees li button, .plats li button, .desserts li button {
             width:70px;
             border-radius: 0 15px 15px 0;
             padding-top: 20px;
@@ -145,6 +146,18 @@
         font-size: 1.1em;
         -webkit-box-shadow: 5px 5px 15px -6px #515151; 
         box-shadow: 5px 5px 15px -6px #515151;
+       }
+       .plat p {
+           
+        /* flex:1; */
+        width: 370px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+        
+       }
+       .plat p:hover {
+           overflow:visible;
        }
        .coeur{
     float:right;
@@ -254,7 +267,7 @@ footer{
                 <li class="bordure plat">
                     <div>
                         <h4 class="bordure">Oeuf au plat</h4>
-                        <p class="bordure">Assaisonné à la truffe sur lit de champignons</p>
+                        <p class="bordure">Assaisonné à 11111111111111111la truffe sur lit de champignons</p>
                     </div>
                     <button class="bordure">20€</button>
                 </li>

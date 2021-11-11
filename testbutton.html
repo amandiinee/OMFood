@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
+    
+    <!-- Google font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Google font Shrikhand-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    <style>
+              * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        box-sizing: border-box;
+    }
+    .bordure {
+        border: solid 0px red;
+    }
+
+    body{
+        list-style-type: none;
+        font-family: "Roboto";
+    }
+    header {
+        background-color: white;
+        height: 63px;
+    }
+    
+    #logo {
+        padding: 13px 0 12px 0;
+        display:flex;
+        justify-content: center;
+        
+    }
+    .pointmap {
+    width: 100%;
+    height: 44px;
+    background-color:#eaeaea;
+    display:flex;
+    justify-content: center;
+    box-shadow: 0 8px 5px -5px #cecece inset;
+    }
+    .pointmap i{
+        display:flex;
+        align-items: center;
+        margin-left:55px;
+        color:#353535;
+        font-size: 1.2em;
+    }
+    .pointmap input{
+        background-color:transparent;
+        font-family: "Roboto";
+        font-weight: bold;
+        color:#353535;
+        font-size: 1.2em;
+        margin-left: 25px;
+        margin-top:3px;
+    }
+    .rechercheresto h3, .rechercheresto h4{
+        text-align: center;
+    }
+    .rechercheresto h3 {
+        margin-top: 20px;
+        font-size: 1.4em;
+        font-weight: bold;
+        
+    }
+    .rechercheresto h4{
+        font-weight: lighter;
+        font-size: 1.1em;
+        margin-top: -30px;
+         
+    }
+
+    
+    .rechercheresto{
+    height:300px;
+    margin-top: 40px;
+    background-color: #f6f6f6;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    }
+    .rechercheresto button{
+    font-family: "Roboto";
+    font-size: 1.0em;
+    height: 50px;
+    width: 220px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 30px;
+    cursor: pointer;
+    
+    color:white;
+    -webkit-box-shadow: 5px 5px 15px -6px #515151; 
+    box-shadow: 5px 5px 15px -6px #515151;
+    
+    }
+    .rechercheresto button:hover{
+        background: linear-gradient(to bottom right, #fc8adc, #9e6fd8);
+        -webkit-box-shadow: 5px 5px 15px -6px #424242; 
+         box-shadow: 5px 5px 15px -6px #424242;
+    }
+  
+    header {
+        background-color: white;
+        height: 63px;
+    }
+
+    main {
+        background-color: #f6f6f6;
+        margin-top:236px;
+        padding:0 15px;
+        border-radius: 40px 40px 0 0;
+        
+
+    }
+
+ 
+    h2{
+        padding:30px 5px;
+        font-family: "Shrikhand";
+        font-size:1.8em;
+    }
+    h4{
+        margin: 2px 0;
+    }
+    p{
+        font-size: 0.9em;
+        margin: 2px 0;
+    }
+
+    .entrees ul li {
+    width: 100%;
+    }
+    .entrees ul p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+    hr {
+        border: 0;
+        border-top: solid 3px #99e2d0;
+        width: 40px;
+        margin-bottom: 20px;
+    }
+
+    .entreestitle {
+        
+        font-weight: lighter;
+        
+    }
+   
+  
+        .entrees li, .plats li, .desserts li {
+            display:flex;
+            flex-direction: row;
+           
+        }
+        .entrees li div, .plats li div, .desserts li div {
+            flex-grow:1;
+            margin-top:10px;
+    
+        }
+        .entrees li button, .plats li button,.desserts li button {
+            width:70px;
+            border-radius: 0 15px 15px 0;
+            padding-top: 20px;
+            font-weight: bold;
+            background-color: transparent;
+            font-size: 0.9em;
+            color: #353535;
+            font-family: "Roboto";
+
+        }
+        .plats, .entrees, .desserts{
+            width: 100%;
+            margin-bottom: 50px;
+    
+        }
+        .plat{
+        height:68px;
+        margin-bottom: 15px;
+        /* margin-right: 1px;
+        margin-left: 1px; */
+        padding-left: 18px;
+        background:white;
+        border-radius: 15px 15px 15px 15px;
+        font-size: 1.1em;
+        -webkit-box-shadow: 5px 5px 15px -6px #515151; 
+        box-shadow: 5px 5px 15px -6px #515151;
+       }
+       .coeur{
+    float:right;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+}
+    ul {
+  animation-duration: 3s;
+  animation-delay: 0.4s;
+  animation-name: glissement;
+  animation-iteration-count:initial;
+}
+@keyframes glissement {
+  from {
+    margin-top: -8%;
+    
+  }
+
+  to {
+    margin-top: 4%;
+    
+  }
+
+  
+}
+
+
+        @media screen and (min-width: 700px) {
+            .page {
+                width: 700px;
+                margin: 0 auto;
+            }  
+        }
+        @media screen and (min-width: 1200px) {
+            .page {
+                width: 1200px;
+            }
+            
+       
+        }    
+    </style>
+</head>
+
+<body>
+    <div class="page bordure">
+        <header>
+            
+            <div class="logo bordure">
+                <a href="#" id="logo"><img src="images/logo/ohmyfood@2x.svg" alt="Logo de ohmyfood"></a>
+            </div>   
+        
+            <div class="pointmap">
+                <i class="bordure fas fa-map-marker-alt"></i> 
+                <input class="bordure" type="search" value="Paris, Belleville"/> 
+            </div>   
+            
+        </header>    
+        <main> 
+            <section class="rechercheresto bordure">
+                <h3 class="bordure">Réservez le menu qui<br/>vous convient</h3> <!--br?-->
+                <h4 class="bordure">Découvrez des restaurants d'exception,<br/>séléctionnés par nos soins.</h4>
+                <button class="bordure">Explorer nos restaurants</button>
+            </section>
+
+            <section class="entrees bordure">
+                <h3 class="bordure entreestitle">ENTRÉES</h3>
+                <hr/>
+                <ul>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Ravioles de foie gras</h4>
+                            <p class="bordure">Accompaaaaaaaaaaaaaaaaaaaaaaaaagnés de leur crème à la truffe</p>
+                        </div>
+                        <button class="bordure">25€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Caviar osciètre</h4>
+                            <p class="bordure">Sur blini à la farine de blé noir</p>
+                        </div>
+                        <button class="bordure">35€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Homard et espuma</h4>
+                            <p class="bordure">Mariné aux zests d'orange</p>
+                        </div>
+                        <button class="bordure">20€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Foie gras de canard cuit entier</h4>
+                            <p class="bordure">Confiture de figue et pain toasté</p>
+                        </div>
+                        <button class="bordure">35€</button>
+                    </li>
+                </ul>  
+            </section>  
+            <section class="plats bordure">
+                <h3 class="bordure entreestitle">PLATS</h3>
+                <hr/>
+                <ul>
+                    <li class="bordure plat"><div>
+                            <h4 class="bordure">Noix de coquilles Saint-Jacques</h4>
+                            <p class="bordure">Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <button class="bordure">40€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Langoustine poêlée</h4>
+                            <p class="bordure">Purée de patate douce</p>
+                        </div>
+                        <button class="bordure">35€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Mijoté de queue de boeuf</h4>
+                            <p class="bordure">Et riz sauvage aux zests de citron</p>
+                        </div>
+                        <button class="bordure">44€</button>
+                    </li>
+                </ul>  
+            </section>  
+            <section class="desserts bordure">
+                <h3 class="bordure entreestitle">DESSERTS</h3>
+                <hr/>
+                <ul>
+                    <li class="bordure plat"><div>
+                            <h4 class="bordure">Macaron noisette et chocolat</h4>
+                            <p class="bordure">Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <button class="bordure">18€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Baba au rhum revisité</h4>
+                            <p class="bordure">Avec son coulis de citron</p>
+                        </div>
+                        <button class="bordure">22€</button>
+                    </li>
+                    <li class="bordure plat">
+                        <div>
+                            <h4 class="bordure">Tarte au citron meringuée</h4>
+                            <p class="bordure">Destructurée</p>
+                        </div>
+                        <button class="bordure">23€</button>
+                    </li>
+                </ul>  
+            </section>  
+
+        </main>
+</body>
+</html>            

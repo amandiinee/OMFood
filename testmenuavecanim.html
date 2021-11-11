@@ -28,18 +28,11 @@
         box-sizing: border-box;
         }
         .bordure {
-        border: solid 0px red;
+        border: solid 1px red;
         } 
-        .plats, .entrees, .desserts{
-            width: 100%;
-            /* margin-bottom: 30px;  */
-        }
-        hr {
-        border: 0;
-        border-top: solid 3px #99e2d0;
-        width: 40px;
-        margin-bottom: 20px;
-        }
+    
+      
+        
         body{
         list-style-type: none;
         font-family: "Roboto";
@@ -53,7 +46,7 @@
     main {
         background-color: #f6f6f6;
         /* margin-top: 283px; */
-        margin-top:236px;
+        margin-top:215px;
         padding:0 15px;
         border-radius: 40px 40px 0 0;
         
@@ -61,30 +54,30 @@
     }
 
     .page{
-        background: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+        background: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position-x: center ;
-        background-position-y: -150px;
+        background-position-y: 0px;
+        background-position-x:center;
     }
     h2{
         padding:30px 5px;
         font-family: "Shrikhand";
         font-size:1.8em;
     }
-    h4{
+    /* h4{
         margin: 2px 0;
     }
     p{
         font-size: 0.9em;
         margin: 2px 0;
-    }
-    hr {
+    } */
+    /* hr {
         border: 0;
         border-top: solid 3px #99e2d0;
         width: 40px;
         margin-bottom: 20px;
-    }
+    } */
     .hautdepage i {
         position: absolute;
         left: 23px;
@@ -109,7 +102,7 @@
         position: relative;
 
     }
-        .entrees li, .plats li, .desserts li {
+        /* .entrees li, .plats li, .desserts li {
             display:flex;
             flex-direction: row;
            
@@ -118,8 +111,8 @@
             flex-grow:1;
             margin-top:10px;
     
-        }
-        .entrees li button, .plats li button,.desserts li button {
+        } */
+        /* .entrees li button, .plats li button, .desserts li button {
             width:70px;
             border-radius: 0 15px 15px 0;
             padding-top: 20px;
@@ -129,24 +122,35 @@
             color: #353535;
             font-family: "Roboto";
 
-        }
-        .plats, .entrees, .desserts{
+        } */
+        /* .plats, .entrees, .desserts{
             width: 100%;
             margin-bottom: 50px;
     
-        }
-        .plat{
+        } */
+        /* .plat{
         height:68px;
         margin-bottom: 15px;
-        /* margin-right: 1px;
-        margin-left: 1px; */
+      
         padding-left: 18px;
         background:white;
         border-radius: 15px 15px 15px 15px;
         font-size: 1.1em;
         -webkit-box-shadow: 5px 5px 15px -6px #515151; 
         box-shadow: 5px 5px 15px -6px #515151;
+       } */
+       /* .plat p {
+           
+        
+        width: 370px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+        
        }
+       .plat p:hover {
+           overflow:visible;
+       } */
        .coeur{
     float:right;
     margin-right: 20px;
@@ -178,6 +182,76 @@
     justify-content: center;
     
 }
+h4 {
+            margin:7px 10px;
+        }
+        p {
+            margin:7px 10px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            width: 94%;
+        }
+        hr {
+            border: 0;
+            border-top: solid 3px #99e2d0;
+            width: 40px;
+            margin-bottom: 20px;
+        }
+        body{
+            list-style-type: none;
+            font-family: "Roboto";
+        }
+        .plats ul li {
+            color:blue;
+            display: flex;
+           
+            
+            height:68px;
+            
+            background:white;
+            border-radius: 15px 15px 15px 15px;
+            
+            -webkit-box-shadow: 5px 5px 15px -6px #515151; 
+            box-shadow: 5px 5px 15px -6px #515151;
+            
+       
+        }
+        .check {
+            width:0px;
+            overflow: hidden;
+            transition-duration: 0.5s;
+            line-height: 68px;
+            text-align: center;
+        }
+        .texte {
+            
+            flex-grow: 1;
+        }
+        .prix {
+            width:75px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            padding-top: 29px;
+            
+        }
+        ul li:hover .check {
+            width: 60px;
+            background-color: green;
+        }
+        ul li:hover .check i {
+            animation-name: rotation;
+            animation-duration: 500ms;
+        }
+        @keyframes rotation {
+            0% {
+                transform:rotate(-270deg);
+            }
+            100% {
+                transform:rotate(0deg);
+            }
+        }
 footer{
             
     background-color: rgb(61, 59, 59);
@@ -232,40 +306,37 @@ footer{
             </a> 
         </header>
         <main class="bordure">
-            <h2 class="bordure">La note enchantée<i class="coeur bordure far fa-heart"></i></h2>
+            <h2 class="bordure">La palette du goût<i class="coeur bordure far fa-heart"></i></h2>
              
         <section class="entrees bordure">
             <h3 class="bordure entreestitle">ENTRÉES</h3>
             <hr/>
             <ul>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Ravioles de foie gras</h4>
-                        <p class="bordure">Accompagnés de leur crème à la truffe</p>
+                        <h4 class="bordure">Fricassée d'escargot</h4>
+                        <p class="bordure">Au piment d'espelette</p>
                     </div>
-                    <button class="bordure">25€</button>
+                    <button class="bordure prix">25€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Caviar osciètre</h4>
-                        <p class="bordure">Sur blini à la farine de blé noir</p>
+                        <h4 class="bordure">Foie gras de canard mi-cuit</h4>
+                        <p class="bordure">Et ses copeaux de truffe noire</p>
                     </div>
-                    <button class="bordure">35€</button>
+                    <button class="bordure prix">35€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Homard et espuma</h4>
-                        <p class="bordure">Mariné aux zests d'orange</p>
+                        <h4 class="bordure">Oeuf au plat</h4>
+                        <p class="bordure">Assaisonné à 11111111111111111la truffe sur lit de champignons</p>
                     </div>
-                    <button class="bordure">20€</button>
+                    <button class="bordure prix">20€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
-                    <div>
-                        <h4 class="bordure">Foie gras de canard cuit entier</h4>
-                        <p class="bordure">Confiture de figue et pain toasté</p>
-                    </div>
-                    <button class="bordure">35€</button>
-                </li>
+                
             </ul>  
         </section>  
     
@@ -273,25 +344,28 @@ footer{
             <h3 class="bordure entreestitle">PLATS</h3>
             <hr/>
             <ul>
-                <li class="bordure plat"><div>
-                        <h4 class="bordure">Noix de coquilles Saint-Jacques</h4>
-                        <p class="bordure">Sur lit de purée de céleri-rave</p>
+                <li class="bordure texte"><div>
+                        <h4 class="bordure">Filet de boeuf aux herbes</h4>
+                        <p class="bordure">Accompagné de sa ribambelle de légumes</p>
                     </div>
-                    <button class="bordure">40€</button>
+                    <button class="bordure prix">40€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Langoustine poêlée</h4>
-                        <p class="bordure">Purée de patate douce</p>
+                        <h4 class="bordure">Parmentier de queue de boeuf</h4>
+                        <p class="bordure">A la truffe noire sur sa purée de panais</p>
                     </div>
-                    <button class="bordure">35€</button>
+                    <button class="bordure prix">35€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Mijoté de queue de boeuf</h4>
-                        <p class="bordure">Et riz sauvage aux zests de citron</p>
+                        <h4 class="bordure">Filet de Turbot</h4>
+                        <p class="bordure">Aux agrumes</p>
                     </div>
-                    <button class="bordure">44€</button>
+                    <button class="bordure prix">44€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
             </ul>  
         </section>  
@@ -299,25 +373,28 @@ footer{
             <h3 class="bordure entreestitle">DESSERTS</h3>
             <hr/>
             <ul>
-                <li class="bordure plat"><div>
-                        <h4 class="bordure">Macaron noisette et chocolat</h4>
-                        <p class="bordure">Glace au caramel brun et sel de Guérande</p>
+                <li class="bordure texte"><div>
+                        <h4 class="bordure">Paris-Brest</h4>
+                        <p class="bordure">Revisité</p>
                     </div>
-                    <button class="bordure">18€</button>
+                    <button class="bordure prix">18€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Baba au rhum revisité</h4>
-                        <p class="bordure">Avec son coulis de citron</p>
+                        <h4 class="bordure">Macaron au chocolat d'exception</h4>
+                        <p class="bordure">Et glace à la vanille de Madagascar</p>
                     </div>
                     <button class="bordure">22€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
-                <li class="bordure plat">
+                <li class="bordure texte">
                     <div>
-                        <h4 class="bordure">Tarte au citron meringuée</h4>
-                        <p class="bordure">Destructurée</p>
+                        <h4 class="bordure">Mousse au chocolat</h4>
+                        <p class="bordure">Au piment d'espelette et à la truffe noire</p>
                     </div>
                     <button class="bordure">23€</button>
+                    <div class="bordure check"><i class="fas fa-check-circle"></i></div>
                 </li>
             </ul>  
         </section>  

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Google font Roboto -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <!--Google font Shrikhand-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+      
+      
+      <!-- Fontawesome icones -->
+      <link rel="preconnect" href="https://fonts.awesome.com" /> 
+      <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    <style>
+               .fleft {
+            float: left;
+            text-align: center;
+            width: 200px;
+            margin: 15px;
+        }
+        
+        .i {
+            font-size: 1.5em;
+        }
+        .jauge {
+            width: 100px;
+            height: 200px;
+            display: block;
+            background-color: #303030;
+            position: relative;
+            margin: 10px auto;
+        }
+         
+        
+        
+        /* Remplissage coin gauche haut */
+        .jauge-rempli {
+            transition: all 0.3s linear 0s;
+            background-color: #e533a1;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+         
+        .jauge:hover .jauge-rempli{
+            width: 100%;
+            height: 100%;
+        }
+     </style>   
+</head>
+
+<body>
+    <div>
+
+        <p class="fleft">
+            <a class= "jauge" href="#">
+                <span class="jauge-rempli"></span>
+            </a>
+        </p>
+
+        <p>
+            <i class="coeur far fa-heart">
+                <span class="jauge-rempli"></span>
+            </a>
+        </p>
+    </div>
+        
+</body>
+</html>

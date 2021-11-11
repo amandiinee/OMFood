@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+ 
+    <style>
+          * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+        .bordure {
+            border: solid 0px red;
+        } 
+        h4 {
+            margin:7px 10px;
+        }
+        p {
+            margin:7px 10px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            width: 94%;
+        }
+        hr {
+            border: 0;
+            border-top: solid 3px #99e2d0;
+            width: 40px;
+            margin-bottom: 20px;
+        }
+        body{
+            list-style-type: none;
+            font-family: "Roboto";
+        }
+        ul li {
+            color:blue;
+            display: flex;
+           
+            
+            height:68px;
+            
+            background:white;
+            border-radius: 15px 15px 15px 15px;
+            
+            -webkit-box-shadow: 5px 5px 15px -6px #515151; 
+            box-shadow: 5px 5px 15px -6px #515151;
+            
+       
+        }
+        .check {
+            width:0px;
+            overflow: hidden;
+            transition-duration: 0.5s;
+            line-height: 68px;
+            text-align: center;
+        }
+        .texte {
+            
+            flex-grow: 1;
+        }
+        .prix {
+            width:75px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            padding-top: 29px;
+            
+        }
+        ul li:hover .check {
+            width: 60px;
+            background-color: green;
+        }
+        ul li:hover .check i {
+            animation-name: rotation;
+            animation-duration: 500ms;
+        }
+        @keyframes rotation {
+            0% {
+                transform:rotate(-270deg);
+            }
+            100% {
+                transform:rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="bordure">
+        <h3 class="bordure">DESSERTS</h3>
+        <hr/>
+
+        <ul>
+            <li class="bordure">
+                <div class="bordure texte">
+                    <h4 class="bordure">Macaron noisette et chocolat</h4>
+                    <p class="bordure">Glace auuuuuuuuuuu caramel brun et sel de Guérande</p>
+                </div>
+                <button class="bordure prix">18€</button>   
+                <div class="bordure check"><i class="fas fa-check-circle"></i></div>
+                
+            </li>
+        </ul>   
+    </section>    
+         
+</body>
+</html>
